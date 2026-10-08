@@ -10,68 +10,88 @@ app.use(express.static(path.join(__dirname, 'public')));
 const menu = [
   {
     id: 1,
-    name: 'Truffle Mushroom Pasta',
-    category: 'Main Course',
-    price: 18.5,
+    name: 'Hyderabadi Dum Biryani',
+    category: 'Biryani',
+    price: 249,
     rating: 4.9,
-    description: 'Creamy parmesan sauce with roasted mushrooms and fresh herbs.',
+    description: 'Fragrant basmati rice layered with saffron, herbs, and slow-cooked spices.',
     image:
-      'https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?auto=format&fit=crop&w=900&q=80'
+      'https://images.unsplash.com/photo-1633945274408-1d5fd8ae2d7c?auto=format&fit=crop&w=900&q=80'
   },
   {
     id: 2,
-    name: 'Firecracker Tacos',
-    category: 'Specials',
-    price: 14.0,
+    name: 'Gongura Chicken',
+    category: 'Curries',
+    price: 229,
     rating: 4.8,
-    description: 'Crispy tacos filled with grilled chicken, lime slaw, and chili glaze.',
+    description: 'Tangy gongura leaves cooked with juicy chicken and Telangana spices.',
     image:
-      'https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=900&q=80'
+      'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=900&q=80'
   },
   {
     id: 3,
-    name: 'Gourmet Burger Deluxe',
-    category: 'Burgers',
-    price: 16.75,
+    name: 'Kodi Pulusu',
+    category: 'Curries',
+    price: 219,
     rating: 4.7,
-    description: 'Double patty, cheddar, caramelized onions, and truffle aioli.',
+    description: 'Spicy chicken stew with tamarind, curry leaves, and rustic flavors.',
     image:
-      'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80'
+      'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80'
   },
   {
     id: 4,
-    name: 'Citrus Salmon Bowl',
-    category: 'Healthy',
-    price: 17.25,
-    rating: 4.9,
-    description: 'Seared salmon, rice, avocado, greens, and orange sesame dressing.',
+    name: 'Pachi Pulusu',
+    category: 'Specials',
+    price: 179,
+    rating: 4.6,
+    description: 'Fresh raw tamarind curry with onion, green chili, and cooling spice balance.',
     image:
-      'https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=900&q=80'
+      'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80'
   },
   {
     id: 5,
-    name: 'Sunset Pizza',
-    category: 'Pizza',
-    price: 19.0,
+    name: 'Jonna Rotte',
+    category: 'Breads',
+    price: 59,
     rating: 4.8,
-    description: 'Wood-fired crust topped with basil, mozzarella, roasted peppers, and chili oil.',
+    description: 'Traditional millet roti served warm with spicy curries and chutneys.',
     image:
-      'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80'
+      'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=80'
   },
   {
     id: 6,
-    name: 'Berry Cheesecake',
+    name: 'Sarva Pindi',
+    category: 'Snacks',
+    price: 89,
+    rating: 4.9,
+    description: 'Crisp, savory and lightly spiced Telangana snack made with gram flour.',
+    image:
+      'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80'
+  },
+  {
+    id: 7,
+    name: 'Mirchi Ka Salan',
+    category: 'Specials',
+    price: 169,
+    rating: 4.8,
+    description: 'Green chilies simmered in a rich peanut-tamarind gravy.',
+    image:
+      'https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=900&q=80'
+  },
+  {
+    id: 8,
+    name: 'Double Ka Meetha',
     category: 'Desserts',
-    price: 8.5,
+    price: 149,
     rating: 5.0,
-    description: 'Velvety cheesecake with fresh berries and house-made compote.',
+    description: 'Hyderabadi bread pudding soaked in saffron milk and nuts.',
     image:
       'https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80'
   }
 ];
 
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', message: 'Saffron & Spice is running' });
+  res.json({ status: 'ok', message: 'Telangana Tastes is running' });
 });
 
 app.get('/api/menu', (req, res) => {
@@ -106,7 +126,7 @@ app.post('/api/orders', (req, res) => {
   };
 
   res.status(201).json({
-    message: 'Order placed successfully!',
+    message: 'Order placed successfully! Your Telangana feast is on the way.',
     order
   });
 });
@@ -121,7 +141,7 @@ app.post('/api/reservations', (req, res) => {
   }
 
   res.status(201).json({
-    message: 'Reservation received! We will confirm shortly.',
+    message: 'Reservation received! We will confirm your table shortly.',
     reservation: {
       name,
       date,
@@ -141,5 +161,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Saffron & Spice restaurant website running on http://localhost:${PORT}`);
+  console.log(`Telangana Tastes restaurant website running on http://localhost:${PORT}`);
 });
