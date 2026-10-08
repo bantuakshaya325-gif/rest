@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saffron & Spice | Delicious Food</title>
+    <meta
+      name="description"
+      content="Saffron & Spice offers handcrafted dishes, warm hospitality, and unforgettable dining experiences."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <div class="brand">
+          <span class="brand-mark">S</span>
+          <div>
+            <h1>Saffron & Spice</h1>
+          </div>
+        </div>
+
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#menu">Menu</a>
+          <a href="#reservation">Reservation</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <a class="button primary" href="#reservation">Book a Table</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <p class="eyebrow">Freshly prepared • Locally sourced</p>
+            <h2>Delicious food. Memorable moments.</h2>
+            <p>
+              Discover chef-inspired cuisine, handcrafted cocktails, and evening
+              vibes designed for celebrations, dates, and family dinners.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#menu">Explore Menu</a>
+              <a class="button secondary" href="#reservation">Reserve Now</a>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <strong>4.9/5</strong>
+                <span>Guest ratings</span>
+              </div>
+              <div>
+                <strong>15+</strong>
+                <span>Signature dishes</span>
+              </div>
+              <div>
+                <strong>Open Daily</strong>
+                <span>11:00 AM - 11:00 PM</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <img
+              src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80"
+              alt="Restaurant dining table with dishes"
+            />
+            <div class="card-badge">
+              <span>Chef's Special</span>
+              <strong>Grilled Citrus Salmon</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="container about-grid">
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80"
+              alt="Chef preparing food"
+            />
+          </div>
+
+          <div class="about-copy">
+            <p class="eyebrow accent">Our story</p>
+            <h3>Made with passion, served with warmth.</h3>
+            <p>
+              At Saffron & Spice, we blend global flavors with contemporary style to
+              create dishes that feel both comforting and elevated. Every plate is
+              made to delight your senses and bring people together around the table.
+            </p>
+            <ul>
+              <li>Seasonal ingredients and handpicked spices</li>
+              <li>Crafted cocktails and curated wine list</li>
+              <li>Thoughtful service for every occasion</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="section menu-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow accent">Popular picks</p>
+            <h3>Chef-curated favorites</h3>
+          </div>
+
+          <div class="category-filters" aria-label="Dish categories">
+            <button class="filter-button active" data-category="All" type="button">All</button>
+            <button class="filter-button" data-category="Main Course" type="button">Main Course</button>
+            <button class="filter-button" data-category="Specials" type="button">Specials</button>
+            <button class="filter-button" data-category="Burgers" type="button">Burgers</button>
+            <button class="filter-button" data-category="Healthy" type="button">Healthy</button>
+            <button class="filter-button" data-category="Pizza" type="button">Pizza</button>
+            <button class="filter-button" data-category="Desserts" type="button">Desserts</button>
+          </div>
+
+          <div id="menuGrid" class="menu-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section experience">
+        <div class="container experience-grid">
+          <div>
+            <p class="eyebrow accent">What makes us special</p>
+            <h3>Ambience that turns meals into memories.</h3>
+          </div>
+
+          <div class="experience-cards">
+            <article>
+              <span>🍽️</span>
+              <h4>Elegant Dining</h4>
+              <p>Warm lighting and cozy seating for intimate evenings.</p>
+            </article>
+            <article>
+              <span>🔥</span>
+              <h4>Signature Flavor</h4>
+              <p>Complex aromas and balanced spice in every bite.</p>
+            </article>
+            <article>
+              <span>🥂</span>
+              <h4>Curated Pairings</h4>
+              <p>Wine, mocktail, and dessert combinations to elevate your order.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="reservation" class="section reservation-section">
+        <div class="container reservation-grid">
+          <div class="reservation-copy">
+            <p class="eyebrow accent">Visit us</p>
+            <h3>Reserve your table</h3>
+            <p>
+              Whether it's a casual lunch or a special celebration, we’ll make room
+              for your moment.
+            </p>
+            <div class="info-list">
+              <div>
+                <strong>Location</strong>
+                <span>24 Harbor Lane, Downtown</span>
+              </div>
+              <div>
+                <strong>Hours</strong>
+                <span>Mon-Sun • 11:00 AM - 11:00 PM</span>
+              </div>
+              <div>
+                <strong>Phone</strong>
+                <span>+1 (415) 555-0178</span>
+              </div>
+            </div>
+          </div>
+
+          <form id="reservationForm" class="reservation-form">
+            <div class="form-row">
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                Guests
+                <input type="number" name="guests" min="1" max="12" value="2" required />
+              </label>
+            </div>
+
+            <div class="form-row">
+              <label>
+                Date
+                <input type="date" name="date" required />
+              </label>
+              <label>
+                Time
+                <input type="time" name="time" required />
+              </label>
+            </div>
+
+            <label>
+              Phone
+              <input type="tel" name="phone" placeholder="(123) 456-7890" required />
+            </label>
+
+            <button class="button primary" type="submit">Reserve Now</button>
+            <p id="reservationStatus" class="status-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section order-section">
+        <div class="container order-grid">
+          <div class="order-panel">
+            <div class="section-heading inline-heading">
+              <p class="eyebrow accent">Order</p>
+              <h3>Your selection</h3>
+            </div>
+
+            <div id="cartItems" class="cart-items">
+              <p class="empty-cart">No dishes selected yet.</p>
+            </div>
+
+            <div class="order-summary">
+              <span>Total</span>
+              <strong id="cartTotal">$0.00</strong>
+            </div>
+          </div>
+
+          <form id="orderForm" class="order-form">
+            <label>
+              Customer name
+              <input type="text" name="customerName" placeholder="John Smith" required />
+            </label>
+            <label>
+              Phone number
+              <input type="tel" name="phone" placeholder="(123) 456-7890" required />
+            </label>
+            <button class="button primary" type="submit">Place Order</button>
+            <p id="orderStatus" class="status-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>Saffron & Spice</h4>
+          <p>Fresh flavors, warm hospitality, unforgettable evenings.</p>
+        </div>
+        <div>
+          <h5>Visit</h5>
+          <p>24 Harbor Lane, Downtown</p>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <p>hello@saffronandspice.com</p>
+          <p>+1 (415) 555-0178</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
